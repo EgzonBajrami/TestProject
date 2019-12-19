@@ -278,6 +278,69 @@
 	font-family:Calibri;
 	color:#3d3d3d;
 }
+#navbar{
+  position:fixed;
+  float:left;
+  top:0;
+  left:0;
+  z-index:2;
+width:100%;
+height:7vw;
+border:1px solid black;
+}
+#navdiv{
+  position:fixed;
+  z-index:2;
+  float:left;
+  height:7vw;
+  width:95vw;
+  
+  background-image:url(https://imgur.com/WEEfeCX.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+#button1{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-bottom:1px solid white;
+    z-index:2;
+    font-size:1vw;
+    font-family:Calibri;
+
+}
+
+#button2{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95.1%;
+  margin-top:3.55%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-left:1 solid white;
+z-index:2;
+font-size:1vw;
+font-family:Calibri;
+}
+.fss1{
+  color:white;
+}
+.fss1:hover{
+  color:white;
+}
+#pbutton1{
+  position:relative;
+  float:left;
+  margin-top:20%;
+  margin-left:15%;
+}
+
 
 </style>
 <html>
@@ -286,9 +349,24 @@
 		<a href="https://egzonbajrami.github.io/TestProject/Page4.html">
 	<img src="https://imgur.com/3O7LQ0M.png" style="width:100%"/> </a> </div>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<div style="width:100%; z-index:2; position:fixed; left:0; top:0">
-		<img src="https://imgur.com/FP77pix.png" style="width:100%; "/>
-	</div>
+	
+  <nav id="navbar">
+    <a href="https://egzonbajrami.github.io/TestProject/P2.html">
+    <div id="navdiv">
+
+    </div> </a>
+    <a href="#Final1">
+    <button id="button1">
+      Kontakt
+    </button>
+  </a>
+    
+    <div id="button2"  > <p id="pbutton1">
+     <a class="fss1" onclick="myFunctionn()"> DE </a>| <a class="fss1" onclick="myFunction()">EN </a> </p>
+    </div> 
+
+
+  </nav>
 </head>
 <body>
 	
