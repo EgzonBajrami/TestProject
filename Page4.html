@@ -296,6 +296,126 @@
 	position:fixed;
 	z-index:-1;
 }
+#navbar{
+  position:fixed;
+  float:left;
+  top:0;
+  left:0;
+  z-index:2;
+width:100%;
+height:7vw;
+border:1px solid black;
+}
+#navdiv{
+  position:fixed;
+  z-index:2;
+  float:left;
+  height:7vw;
+  width:95vw;
+  
+  background-image:url(https://imgur.com/WEEfeCX.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+#button1{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-bottom:1px solid white;
+    z-index:2;
+    font-size:1vw;
+    font-family:Calibri;
+
+}
+
+#button2{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95.1%;
+  margin-top:3.55%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-left:1 solid white;
+z-index:2;
+font-size:1vw;
+font-family:Calibri;
+}
+.fss1{
+  color:white;
+}
+.fss1:hover{
+  color:white;
+}
+#pbutton1{
+  position:relative;
+  float:left;
+  margin-top:20%;
+  margin-left:15%;
+}
+.mySlides {display: none;
+position:relative;
+	float:left;
+	margin-top:2%;
+	margin-left:10.5%;
+	width:75vw;
+}
+     .prev, .next {
+
+  position: absolute;
+  float:left;
+
+  width: 3vw;
+  height:3vw;
+
+  margin-left:40%;
+  
+  color:rgb(204, 293, 204);
+  font-weight: bold;
+  font-size:0.5vw;
+  
+
+
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+.prev{
+	position:relative;
+	float:left;
+  background-image:url(https://imgur.com/encbFvK.png);
+  background-repeat:no-repeat;
+  background-size:100%;
+  margin-left:45%;
+  margin-top:0.2%;
+  color:rgb(239, 239, 239);
+  
+}
+.next{
+	position:relative;
+	float:left;
+  background-image:url(https://imgur.com/wp8qcNy.png);
+  background-repeat:no-repeat;
+  background-size:85%;
+   
+  margin-left:2%;
+ 
+
+}
+.prev:hover{
+  color:rgb(239, 239, 239);
+  font-size:0px;
+}
+.next:hover{
+  color:rgb(239, 239, 239);
+  font-size:0px;
+}
 
 </style>
 <html>
@@ -303,9 +423,23 @@
 	<div style="z-index:9999; position:relative">
 	<img src="https://imgur.com/1IMcapr.png" style="width:100%;"/> </div>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<div style="width:100%; z-index:2; position:fixed; left:0; top:0">
-		<img src="https://imgur.com/FP77pix.png" style="width:100%; "/>
-	</div>
+	  <nav id="navbar">
+    <a href="https://egzonbajrami.github.io/TestProject/P2.html">
+    <div id="navdiv">
+
+    </div> </a>
+    <a href="#Final1">
+    <button id="button1">
+      Kontakt
+    </button>
+  </a>
+    
+    <div id="button2"  > <p id="pbutton1">
+     <a class="fss1" onclick="myFunctionn()"> DE </a>| <a class="fss1" onclick="myFunction()">EN </a> </p>
+    </div> 
+
+
+  </nav>
 <body>
 	
    
@@ -314,8 +448,14 @@
 	<section id="firsts">
   
      <div id="segmento"> +SEGMENTO </div>
-     <img id="segmentoig" src="https://imgur.com/zijwWHv.png">
-     <img id ="img4" src="https://imgur.com/K0gShkx.png"/>
+     <div class ="mySlides">
+     <img style="width:100%" src="https://imgur.com/zijwWHv.png">
+     </div>
+     <div class="mySlides">
+     <img  src="https://imgur.com/QbuFANR.png" style="width:100%"> </div>
+      <div style="position:relative; float:left; margin-left:0%; width:100%; ">
+        <a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
      <div id="text1">Der schnörkellose Klassiker von Poggenpohl.<br>
      	Mit elegant segmentierten, grifflosen FLächen für horizontale und vertikale Lihienführung. Für ein akzentuiertes Gesamtbild wie aus einem Guss. Die klaer Küche mit feinem Charakter. <br> <br> <br></p>
      </div>
@@ -329,8 +469,8 @@
      	<div id ="mid3" class="col-md-6"> </div>
      	<div id="mid4" class="col-md-6"> </div>
      </div>
-     <div id="midte1"> <p><strong>Besondere Merkmale:</strong> </p><br>
-     	<ul>
+     <div id="midte1"> <p id="besond"><strong>Besondere Merkmale:</strong> </p><br>
+     	<ul id="besond2">
      		<li>gegliederte Flächen mit feinen Fugen</li>
      		<li>Fronten auch zur Wandgestaltung</li>
             <li>auß en puristich, innen detailreich</li>
@@ -344,7 +484,7 @@
      	</div>
      	<div id="Fin4">
      	</div>
-     	<div id="Ein1"> <p> Poggenpohl pur in Design und Struktur.<br>
+     	<div id="Ein1"> <p id="Ein1p"> Poggenpohl pur in Design und Struktur.<br>
      	Im Detail ein großes Vergnügen.</p>
      </div>
      <div id="yimage"> </div>
@@ -353,7 +493,7 @@
      </div>
      <img id="Ein3" src="https://imgur.com/MgmiohF.png"/>
      
-    <div id="Final1"> <p class="Fixf">
+    <div id="Final1"> <p class="Fixf" id="para4">
     	
     	<strong>Brock&Stephan<br>
 	Einbauküchen</strong><br> <br>
@@ -362,22 +502,76 @@
 	+49 (0)30 / 853 80 55<br>
 	info@brock-stephan.com </p>
     </div>
-    <div id="Final2"> <p class="Fixf"><strong>ÖFFUNGSZEITEN</strong><br><br>
+    <div id="Final2"> <p class="Fixf" id="para1"><strong>ÖFFUNGSZEITEN</strong><br><br>
 		Montag bis Freitag<br>
 		09.00 bis 18.00 Uhr <br> <br>
 		Samstag<br>
 		10.00 bis 14.00 Uhr <br>
 	und nach Vereinbarung</p> </div>
-    <div id="Final3"> <p class="Fixf"><strong>STUDIOS</strong><br>
+    <div id="Final3"> <p class="Fixf" id="para2"><strong>STUDIOS</strong><br>
 	Brock & Stephan<br>
 	Einbauküchen<br><br>
 	Brock+Stephan<br>
 	Einbauküchen im stilwerk<br><br>
 	Küchenatelier Roseneck</p> </div>
-    <div id="Final4"> <p class="Fixf"><strong> IMPRESSUM<br>
+    <div id="Final4"> <p class="Fixf" id="para3"><strong> IMPRESSUM<br>
 		<br>
 	DATENSCHUTZ</strong></p> </div>
 
 	</section>
+	<script>
+   
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+}
+function myFunction() {
+	document.getElementById("text1").innerHTML ="The no-frills classic from Poggenpohl. <br>With elegantly segmented, handle-free surfaces for horizontal and vertical line guidance. For an accentuated overall picture as if from a single source. The clear kitchen with a fine character. <br> <br> <br>";
+	document.getElementById("besond").innerHTML ="<strong> Special features: </strong>";
+	document.getElementById("besond2").innerHTML ="<li> structured surfaces with fine joints </li><li> Fronts also for wall design </li><li> outside and pure, inside rich in detail </li><li> subtle worktops </li><li> shelf areas that can be flexibly integrated </li>";
+	document.getElementById("Ein1p").innerHTML ="Poggenpohl pure in design and structure. <br>A great pleasure in detail.";
+	document.getElementById("Ein2p").innerHTML ="<strong> Make an appointment now </strong>";
+	 document.getElementById("para4").innerHTML = "<strong>Brock&Stephan<br>Fitted Kitchens</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+    document.getElementById("para1").innerHTML ="<strong>OPENNING HOURS</strong><br><br> Monday to Friday<br>09.00 to 18.00 <br> <br> Saturday<br> 10.00 to 14.00  <br>and by appointment";
+    document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Fitted Kitchens<br><br>Brock+Stephan<br>Fitted kitchens in the stilwerk<br><br>Kitchen studio Roseneck";
+    document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>PRIVACY</strong>";
+
+
+
+
+}
+function myFunctionn() {
+document.getElementById("text1").innerHTML ="Der schnörkellose Klassiker von Poggenpohl.<br>Mit elegant segmentierten, grifflosen FLächen für horizontale und vertikale Lihienführung. Für ein akzentuiertes Gesamtbild wie aus einem Guss. Die klaer Küche mit feinem Charakter. <br> <br> <br>";
+document.getElementById("besond").innerHTML ="<strong>Besondere Merkmale:</strong>";
+document.getElementById("besond2").innerHTML ="<li>gegliederte Flächen mit feinen Fugen</li><li>Fronten auch zur Wandgestaltung</li><li>auß en puristich, innen detailreich</li><li>dezente Arbeitsplatten</li><li>flexibel integrierbare Regalflächen</li>";
+document.getElementById("Ein1p").innerHTML ="Poggenpohl pur in Design und Struktur.<br>Im Detail ein großes Vergnügen.";
+document.getElementById("Ein2p").innerHTML ="<strong>Jetzt Termin vereinbaren</strong>";
+	document.getElementById("para4").innerHTML ="<strong>Brock&Stephan<br>Einbauküchen</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+document.getElementById("para1").innerHTML ="<strong>ÖFFUNGSZEITEN</strong><br><br>Montag bis Freitag<br>09.00 bis 18.00 Uhr <br> <br>Samstag<br>10.00 bis 14.00 Uhr <br>und nach Vereinbarung";
+document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Einbauküchen<br><br>Brock+Stephan<br>Einbauküchen im stilwerk<br><br>Küchenatelier Roseneck";
+document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>DATENSCHUTZ</strong>";
+}
+	</script>
+
+
+
 </body>
 </html>
