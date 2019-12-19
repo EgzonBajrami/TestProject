@@ -344,6 +344,7 @@
    #Fragen{
    	position:relative;
    	float:left;
+    text-align:center;
    	width:100%;
 
    	margin-top:10%;
@@ -353,6 +354,7 @@
    	float:left;
    	width:17vw;
     height:20vw;
+    text-align:center;
     margin-left:19%;
     background-color:rgb(144, 183, 207);
 
@@ -711,9 +713,16 @@ border:1px solid black;
   width:5vw;
     height:3.5vw;
     color:white;
+    border-left:1 solid white;
 z-index:2;
 font-size:1vw;
 font-family:Calibri;
+}
+.fss1{
+  color:white;
+}
+.fss1:hover{
+  color:white;
 }
 .dot {
   position:relative;
@@ -746,7 +755,26 @@ font-family:Calibri;
 
 display:none;
 }
+#sp1{
+
+margin-left:5%;
+}
+#sp2{
+  margin-left:5.4%;
+}
+#sp3{
+  margin-left:6%;
+}
+#pbutton1{
+  position:relative;
+  float:left;
+  margin-top:20%;
+  margin-left:15%;
+}
+
 	</style>
+
+
 
 
 <html>
@@ -793,10 +821,11 @@ display:none;
       Kontakt
     </button>
   </a>
-    <a href="https://egzonbajrami.github.io/TestProject/P13En.html">
-    <button id="button2">
-      DE | EN
-    </button> </a>
+    
+    <div id="button2"  > <p id="pbutton1">
+     <a class="fss1" onclick="myFunctionn()"> DE </a>| <a class="fss1" onclick="myFunction()">EN </a> </p>
+    </div> 
+
 
   </nav>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
@@ -807,8 +836,8 @@ display:none;
  
 		<div id="firstDiv"> 
 			<div class="row" id="firstrow">
-				<div class="col-md-4" id="profis"> DIE PROFIS<br>
-				FÜR PREMIUM.</div>
+				<div class="col-md-4" id="profis"><p id="dieProfis"> DIE PROFIS<br>
+				FÜR PREMIUM. </p></div>
 				<div class="col-md-8" id="kuche"><p id="firstp" class="lang" key="changeLang2">DIE KÜCHE IHRES LEBENS. NACH IHREN <br> WÜNSCHEN UND BEDÜRFNISSEN GESTALTET <br>
 				UND PERFEKT UMGESETZT. WIR FREUEN <br>
 				UNS AUF IHRE IDEEN UND IHREN BESUCH. </p> 
@@ -930,9 +959,9 @@ display:none;
          		<div class="col-md-6" id="FDiv1"> <p id="FDiv1p">
              KONTAKT
       		</p> </div>
-      		<div class="col-md-8" id="FDiv2"><p id="FDiv2p"> Telefon<span style="margin-left:5%"> +49 (0)30 / 853 80 55 </span> <br>
-      			Telefax<span style="margin-left:5.4%"> +49 (0)30 / 853 80 20 </span> <br> 
-      			E-Mail <span style="margin-left:6%"> info@brock-stephan.com </span>
+      		<div class="col-md-8" id="FDiv2"><p id="FDiv2p"> Telefon<span id= "sp1"> +49 (0)30 / 853 80 55 </span> <br>
+      			Telefax<span id="sp2"> +49 (0)30 / 853 80 20 </span> <br> 
+      			E-Mail <span id="sp3"> info@brock-stephan.com </span>
       		</p> </div>
 
       		    <div class="col-md-6" id="FDiv3">
@@ -1013,7 +1042,63 @@ function showSlidess(n) {
   slidess[slideIndex-1].style.display = "block";
   dotss[slideIndex-1].className += " active";
 }
+document.write('<br/>');
+document.write('<strong>');
 
+function myFunction() {
+  document.getElementById("firstp").innerHTML = "THE KITCHEN OF YOUR LIFE. ACCORDING TO YOUR<br/> WISHES AND NEEDS DESIGNED<br/> AND PERFECTLY IMPLEMENTED. WE'RE GLAD <br/> US ON YOUR IDEAS AND VISIT.";
+  document.getElementById("dieProfis").innerHTML="THE PROFESSIONALS<br> FOR PREMIUM.";
+  document.getElementById("p1p").innerHTML ="<strong> Rüdiger Brock</strong><br> Owner<br> info@brock-stephan.com";
+  document.getElementById("p4p").innerHTML="<strong>Martin Förster</strong><br> Kitchen Planner<br> foerster@brock-stephan.com";
+  document.getElementById("p5p").innnerHTML ="<strong>Julia Kusnezowa</strong><br> Back office<br> kuszenowa@brock-stephan.com";
+  document.getElementById("md3p").innerHTML=" A visit to our studio<br> shows them what your<br> makes your life.<br> Best design for the eyes and<br> Material quality you can touch-<br>experience live with us.";
+  document.getElementById("Wir").innerHTML ="We understand your ideas perfectly<br>implement. Use our<br> decades of experience with the<br> Planning and Realization<br>highest quality kitchen <br>including instruction.<br>Boil down and later maintenance";
+  document.getElementById("fra").innerHTML ="ASK";
+  document.getElementById("fra").style["margin-left"]="30%";
+
+  document.getElementById("pm1").innerHTML ="What does a new kitchen cost?";
+    document.getElementById("pm2").innerHTML ="Why a Brock & Stephan kitchen?";
+    document.getElementById("pm3").innerHTML ="Is there an online kitchen planner?";
+    document.getElementById("pm4").innerHTML ="What is special about Brock & Stephan kitchen studios?";
+    document.getElementById("pm5").innerHTML ="What kitchen accessories are there?";
+    document.getElementById("pm6").innerHTML ="Are kitchens also planned barrier-free?";
+    document.getElementById("pm7").innerHTML ="Is there a possibility of advice at home?";
+    document.getElementById("FDiv1p").innerHTML ="Contact";
+    document.getElementById("news1p").innerHTML ="Your email adress";
+    document.getElementById("para4").innerHTML = "<strong>Brock&Stephan<br>Fitted Kitchens</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+    document.getElementById("para1").innerHTML ="<strong>OPENNING HOURS</strong><br><br> Monday to Friday<br>09.00 to 18.00 <br> <br> Saturday<br> 10.00 to 14.00  <br>and by appointment";
+    document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Fitted Kitchens<br><br>Brock+Stephan<br>Fitted kitchens in the stilwerk<br><br>Kitchen studio Roseneck";
+    document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>PRIVACY</strong>";
+    document.getElementById("Senden").src ="https://imgur.com/ATvhvKQ.png";
+ }
+
+function myFunctionn() {
+document.getElementById("dieProfis").innerHTML = "DIE PROFIS<br>FÜR PREMIUM";
+document.getElementById("firstp").innerHTML="DIE KÜCHE IHRES LEBENS. NACH IHREN <br> WÜNSCHEN UND BEDÜRFNISSEN GESTALTET <br>UND PERFEKT UMGESETZT. WIR FREUEN <br>UNS AUF IHRE IDEEN UND IHREN BESUCH.";
+document.getElementById("p1p").innerHTML =" <strong> Rüdiger Brock</strong><br>Inhaber<br>info@brock-stephan.com";
+document.getElementById("p4p").innerHTML ="<strong>Martin Förster</strong><br>Küchenplaner<br>foerster@brock-stephan.com";
+document.getElementById("p5p").innerHTML ="<strong>Julia Kusnezowa</strong><br> Backoffice<br>kuszenowa@brock-stephan.com";
+document.getElementById("md3p").innerHTML =" Ein Besuch in unserem Studio<br>zeigt ihnen, was die Küche Ihres<br>Lebens ausmacht.<br>Bestes Design für die Augen und<br>Materialqualität zum Anfassen-<br>bei uns live erleben.";
+document.getElementById("Wir").innerHTML ="Wir verstehen, Ihre Ideem perfekt<br>umzusetzen. Nutzen Sie unsere<br>jahrzehntelange Erfahrung mit der<br>Planung und REalisation <br>hochwertigster Kuchen-<br>einschließlich Einweisung.<br>Einkochen und später wartung.";
+document.getElementById("fra").innerHTML ="FRAGEN";
+document.getElementById("fra").style["margin-left"]="17%";
+
+document.getElementById("pm1").innerHTML ="Was kostet eine neue Küche?";
+document.getElementById("pm2").innerHTML="Warum eine Küche von Brock & Stephan?";
+document.getElementById("pm3").innerHTML ="Gibt es einen Online-Küchenplaner?";
+document.getElementById("pm4").innerHTML ="Was ist an Brock &Stephan Küchenstudios besonders?";
+document.getElementById("pm5").innerHTML ="Welches Zubehör für Küchen gibt es?";
+document.getElementById("pm6").innerHTML ="Werden Küchen auch barrierefrei geplant?";
+document.getElementById("pm7").innerHTML ="Besteht die Möglichkeit einer Beratung zu Hause?";
+document.getElementById("FDiv1p").innerHTML ="KONTAKT";
+document.getElementById("news1p").innerHTML ="Ihre Email Adresse";
+document.getElementById("para4").innerHTML ="<strong>Brock&Stephan<br>Einbauküchen</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+document.getElementById("para1").innerHTML ="<strong>ÖFFUNGSZEITEN</strong><br><br>Montag bis Freitag<br>09.00 bis 18.00 Uhr <br> <br>Samstag<br>10.00 bis 14.00 Uhr <br>und nach Vereinbarung";
+document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Einbauküchen<br><br>Brock+Stephan<br>Einbauküchen im stilwerk<br><br>Küchenatelier Roseneck";
+document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>DATENSCHUTZ</strong>";
+document.getElementById("Senden").src ="https://imgur.com/xjgGWv6.png";
+
+}
 
 
 </script>
