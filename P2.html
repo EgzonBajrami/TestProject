@@ -62,12 +62,12 @@
      	position:relative;
      	float:left;
         
-     	width:100vw;
+     	width:99.9vw;
      }
      #row2{
      	position:relative;
      	float:left;
-     	width:100vw;
+     	width:99.9vw;
      }
      #md1{
      	position:relative;
@@ -170,6 +170,13 @@
      	font-weight:100;
      	color:white;
      }
+      #zube3{
+      margin-top:40%;
+      font-size:3.5vw;
+      font-family:Calibri;
+      font-weight:100;
+      color:white;
+     }
 
      #zube2{
      	margin-top:20%;
@@ -178,6 +185,22 @@
      	font-family:Calibri;
      	font-weight:200;
      	color:#3d3d3d;
+     }
+      #zube4{
+      margin-top:20%;
+      font-size:1.1vw;
+      max-height:80%;
+      font-family:Calibri;
+      font-weight:200;
+      color:#3d3d3d;
+     }
+      #zube5{
+      margin-top:20%;
+      font-size:1.1vw;
+      max-height:80%;
+      font-family:Calibri;
+      font-weight:200;
+      color:#3d3d3d;
      }
      #mid2{
      	position:relative;
@@ -412,24 +435,173 @@
 
       
      }
-.show{display:block; position:fixed; z-index:9999; top:0; left:0;width:100%; height:100vh; opacity:0.7;}
+.show{display:block; position:fixed; z-index:9999; top:0; left:0;width:100%; height:90vh; opacity:0.9;}
 .hide{display:none;}
-     
+.slides{
+  z-index:9999; position:relative; width:100%;
+
+display:none;
+}
+  .dot {
+  position:relative;
+  float:left;
+  cursor: pointer;
+
+  height: 1vw;
+  width: 5.7vw;
+  margin-top:-20%;
+  z-index:9999;
+  margin: 0 4px;
+  background-color: white;
+  
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dotdiv{
+  z-index:9999;
+  position:relative;
+  float:left;
+  width:50vw;
+  margin-top:-1%;
+  margin-left:31.5%;
+}
+.active, .dot:hover {
+  background-color: rgb(144,183, 207);
+}  
+#navbar{
+  position:fixed;
+  float:left;
+  top:0;
+  left:0;
+  z-index:2;
+width:100%;
+height:7vw;
+border:1px solid black;
+}
+#navdiv{
+  position:fixed;
+  z-index:2;
+  float:left;
+  height:7vw;
+  width:95vw;
+  
+  background-image:url(https://imgur.com/WEEfeCX.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+#button1{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-bottom:1px solid white;
+    z-index:2;
+    font-size:1vw;
+    font-family:Calibri;
+
+}
+
+#button2{
+  background-color:#3d3d3d;
+  position:fixed;
+  float:left;
+  margin-left:95.1%;
+  margin-top:3.55%;
+  width:5vw;
+    height:3.5vw;
+    color:white;
+    border-left:1 solid white;
+z-index:2;
+font-size:1vw;
+font-family:Calibri;
+}
+.fss1{
+  color:white;
+}
+.fss1:hover{
+  color:white;
+} 
+#pbutton1{
+  position:relative;
+  float:left;
+  margin-top:20%;
+  margin-left:15%;
+}
+#but1{
+  position:relative;
+  float:left;
+  z-index:9999;
+  border:1px solid white;
+  margin-top:-28.5%;
+  margin-left:92.5%;
+  width:7vw;
+  height:1.7vw;
+  background:Transparent;
+}
+
 	</style>
+
 <html>
 <head>
-	<div style="position:relative; z-index:9999">
-    <img src="https://imgur.com/MYwL2su.png" style="width:100%; "/>
+	<div class="slides" style="position:relative; z-index:9999">
+    <img src="https://imgur.com/XazWhaP.png" style="width:100%; "/>
 </div>
+<div class="slides" style="position:relative; z-index:9999">
+    <img src="https://imgur.com/QbuFANR.png" style="width:100%; "/>
+</div>
+<div class="slides" style="position:relative; z-index:9999">
+  <img src="https://imgur.com/u3CtSTS.png" style="width:100%">
+</div>
+  <div class="slides" style="position:relative; z-index:9999">
+    <img src="https://imgur.com/XazWhaP.png" style="width:100%; "/>
+</div>
+<div class="slides" style="position:relative; z-index:9999">
+    <img src="https://imgur.com/QbuFANR.png" style="width:100%; "/>
+</div>
+<div class="slides" style="position:relative; z-index:9999">
+  <img src="https://imgur.com/u3CtSTS.png" style="width:100%">
+</div>
+<a href="https://egzonbajrami.github.io/TestProject/P13.html">
+<button id="but1" type="button"> 
+  </button> </a>
+ <div id="dotdiv" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+   <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
 <a href="https://egzonbajrami.github.io/TestProject/P13.html"> </a>
  <img id="Picture1" src="https://imgur.com/dIT0Ah9.png" class="hide"/> 
-
-<div id="fixedTop" style="width:100%; position:fixed; height:20px; z-index:2; top:0; left:0">
-	<img src="https://imgur.com/FP77pix.png" style="width:100%;position:fixed; top:0; left:0"/>
-	<input type="button" value="" onclick="showImg()" style="top:0; left:0; position:fixed; width:4.5vw; height:8vw; display:block; background-color:Transparent; background-repeat:no-repeat;
+ <nav id="navbar">
+    
+    <div id="navdiv">
+      <input type="button" value="" onclick="showImg()" style="top:0; left:0; position:fixed; width:4.5vw; height:8vw; display:block; background-color:Transparent; background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;"/>
+
+    </div> </a>
+    <a href="#Final1">
+    <button id="button1">
+      Kontakt
+    </button>
+  </a>
+    
+    <div id="button2"  > <p id="pbutton1">
+     <a class="fss1" onclick="myFunctionn()"> DE </a>| <a class="fss1" onclick="myFunction()">EN </a> </p>
+    </div> 
+
+
+  </nav>
+
+
+	
 	 <img id="Picture1" src="https://imgur.com/MYwL2su.png" class="hide"/>
 	</div>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
@@ -477,8 +649,8 @@
       	</div>
       	<div class="row" id="mid2">
       		<div class="col-md-4" id="z4"> </div>
-      		<div class="col-md-4" id="z5"><p id="zube"> PROJEKTE</p> </div>
-      		<div class="col-md-4" id="z6"><p id="zube2">
+      		<div class="col-md-4" id="z5"><p id="zube3"> PROJEKTE</p> </div>
+      		<div class="col-md-4" id="z6"><p id="zube4">
       		Unsere vielfältigen<br>
       		Referenzküchen repräsentieren<br>
       		hohe Lebensqualität und Stil.<br>
@@ -491,7 +663,7 @@
           <div class="col-md-4" id="z7"> </div>
           <div class="col-md-4" id="z8"> <p id="manu"> MANU<br>FAKTUR</p></div>
           <div class="col-md-4" id="z9">
-          <p id="zube2">
+          <p id="zube5">
       		Für Sonderwünsche und Ein-und<br>
       		Anbauten ist unsere<br>
       		Spezialwerkstatt da. Unsere<br>
@@ -504,13 +676,17 @@
       	
       		<div class="col-md-6" id="FDiv1"> <p id="FDiv1p">
              KONTAKT
-      		</p> </div>
-      		<div class="col-md-8" id="FDiv2"><p id="FDiv2p"> Telefon<span style="margin-left:5%"> +49 (0)30 / 853 80 55 </span> <br>
-      			Telefax<span style="margin-left:5.4%"> +49 (0)30 / 8533 80 20 </span> <br> 
-      			E-Mail <span style="margin-left:6%"> info@brock-stephan.com </span>
-      		</p> </div>
-                <div class="col-md-6" id="FDiv3">
-      		     <div class="col-md-4" id="news1">NEWSLETTER </div>
+      		</p> 
+        </div>  
+               
+              <div class="col-md-8" id="FDiv2"><p id="FDiv2p"> Telefon<span style="margin-left:5%"> +49 (0)30 / 853 80 55 </span> <br>
+            Telefax<span style="margin-left:5.4%"> +49 (0)30 / 853 80 20 </span> <br> 
+            E-Mail <span style="margin-left:6%"> info@brock-stephan.com </span>
+          </p> </div>
+
+
+          <div class="col-md-6" id="FDiv3">
+               <div class="col-md-4" id="news1">NEWSLETTER </div>
             <div class="col-md-4" id="news2">
               <div style="border-bottom:1px solid white; position:relative; float:left; width:95%;"> 
              <p id="news1p">  Ihre Email Adresse <span style="width:20%;">   </span>   </p>  </div> <img src="https://imgur.com/xjgGWv6.png" id="Senden">
@@ -518,29 +694,31 @@
               <p id="news2p" > Lorem ipsum dolor sit amen perpeetuum mobile konstruktor <br>
               lorem tips fonohikanum. </p></div>
             </div>
+      	
+            
           </div>
       	
          <div id="Final1">
-         		 <p class="Fixf"><strong>Brock&Stephan<br>
+         		 <p class="Fixf" id="para4"><strong>Brock&Stephan<br>
 	Einbauküchen</strong><br> <br>
 	Bundesallee 155<br>
 	10715 Berlin <br> <br>
 	+49 (0)30 / 853 80 55<br>
 	info@brock-stephan.com </p>
     </div>
-     <div id="Final2"> <p class="Fixf"><strong>ÖFFUNGSZEITEN</strong><br><br>
+     <div id="Final2"> <p class="Fixf" id="para1"><strong>ÖFFUNGSZEITEN</strong><br><br>
 		Montag bis Freitag<br>
 		09.00 bis 18.00 Uhr <br> <br>
 		Samstag<br>
 		10.00 bis 14.00 Uhr <br>
 	und nach Vereinbarung</p> </div>
-    <div id="Final3"> <p class="Fixf"><strong>STUDIOS</strong><br>
+    <div id="Final3"> <p class="Fixf" id="para2"><strong>STUDIOS</strong><br>
 	Brock & Stephan<br>
 	Einbauküchen<br><br>
 	Brock+Stephan<br>
 	Einbauküchen im stilwerk<br><br>
 	Küchenatelier Roseneck</p> </div>
-    <div id="Final4"> <p class="Fixf"><strong> IMPRESSUM<br>
+    <div id="Final4"> <p class="Fixf" id="para3"><strong> IMPRESSUM<br>
 		<br>
 	DATENSCHUTZ</strong></p> </div>
       </section>
@@ -554,6 +732,66 @@ obj.className = 'show';
 }
 document.getElementById('Picture1').onclick = function(event) {
     document.getElementById('Picture1').className = "hidden";
+}
+var slideIndex = 1;
+showSlidess(slideIndex);
+function currentSlide(n) {
+  showSlidess(slideIndex = n);
+}
+function showSlidess(n) {
+  var i;
+  var slidess = document.getElementsByClassName("slides");
+  var dotss = document.getElementsByClassName("dot");
+  if (n > slidess.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slidess.length}
+  for (i = 0; i < slidess.length; i++) {
+      slidess[i].style.display = "none";
+  }
+  for (i = 0; i < dotss.length; i++) {
+      dotss[i].className = dotss[i].className.replace(" active", "");
+  }
+  slidess[slideIndex-1].style.display = "block";
+  dotss[slideIndex-1].className += " active";
+}
+document.write('<br/>');
+document.write('<strong>');
+
+function myFunction() {
+  document.getElementById("firstpara").innerHTML = "PREMIUM BRAND KITCHEN OF THE MOST TRADITIONAL.<br>GERMAN KITCHEN PRODUCER DESIGN AND QUALITY <br>AT ITS BEST. IN BERLIN ONLY IN OUR STUDIOS.";
+  document.getElementById("zube").innerHTML = "ACCESSORIES";
+  document.getElementById("zube").style["font-size"] ="2.5vw";
+  document.getElementById("zube2").innerHTML ="We carry the devices of the <br> most prestigious brands worldwide technology for cooking <br>with passion. Selected <br> accessories complement the <br> exclusive program. <br><br> > <strong> Accessories </strong>"
+  document.getElementById("zube3").innerHTML = "PROJECTS";
+    document.getElementById("zube4").innerHTML ="Our diverse range<br>Reference kitchens represent <br>high quality of life and style. <br>Some of our customers grant <br>Insights that we like here with to <br>share to you. <br> <br><strong>> Projects </strong> </p>";
+    document.getElementById("manu").innerHTML ="FACTORY";
+    document.getElementById("manu").style["margin-top"] ="40%";
+    document.getElementById("zube5").innerHTML ="For special requests and in and out<br> cultivation is our business Special workshop there. Our <br> craft professionals build almost everything <br>for her. From sliding doors to <br>complete wall units. <br> <br><strong>> Factory </strong>";
+        document.getElementById("FDiv1p").innerHTML ="Contact";
+    document.getElementById("news1p").innerHTML ="Your email adress";
+    document.getElementById("para4").innerHTML = "<strong>Brock&Stephan<br>Fitted Kitchens</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+    document.getElementById("para1").innerHTML ="<strong>OPENNING HOURS</strong><br><br> Monday to Friday<br>09.00 to 18.00 <br> <br> Saturday<br> 10.00 to 14.00  <br>and by appointment";
+    document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Fitted Kitchens<br><br>Brock+Stephan<br>Fitted kitchens in the stilwerk<br><br>Kitchen studio Roseneck";
+    document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>PRIVACY</strong>";
+    document.getElementById("Senden").src ="https://imgur.com/ATvhvKQ.png";
+ }
+function myFunctionn() {
+  document.getElementById("firstpara").innerHTML ="PREMIUM-MARENKÜCHEN DES TRADITIONSREICHSTEN <br> DEUTSCHEN KÜCHENHERSTELLERS.DESIGN UND QUALITÄT <br> VOM FEINSTEN. IN BERLIN NUR IN UNSEREN STUDIOS.";
+  document.getElementById("zube").innerHTML ="ZUBEHÖR";
+  document.getElementById("zube").style["font-size"] ="3.5vw";
+  document.getElementById("zube2").innerHTML ="Wir führen die Geräte der<br>renommiertesten Marken <br>weltweit-Technik fürs Kochen<br>mit Leidenschaft. Ausgewählte<br>Accessoires ergänzen das<br>exklusive Programm.<br><br>><strong> Zubehör </strong>";
+  document.getElementById("zube3").innerHTML ="PROJEKTE";
+  document.getElementById("zube4").innerHTML ="Unsere vielfältigen<br>Referenzküchen repräsentieren<br>hohe Lebensqualität und Stil.<br>Einige unseren Kunden gewähren<br>Einblicke, die wir hier gern mit<br>Ihnen teilen.<br> <br><strong> >Projekte</strong>";
+  document.getElementById("manu").innerHTML ="MANU<BR>FACTOR";
+  document.getElementById("manu").style["margin-top"]="30%";
+  document.getElementById("zube5").innerHTML ="Für Sonderwünsche und Ein-und<br> Anbauten ist unsere<br>Spezialwerkstatt da. Unsere<br>Handwerksprofis bauen fast alles<br>für Sie. Von Schiebetüren bis zu<br>kompletten Schrankwänden.<br> <br><strong> > Manufaktur</strong>";
+  document.getElementById("FDiv1p").innerHTML ="KONTAKT";
+document.getElementById("news1p").innerHTML ="Ihre Email Adresse";
+document.getElementById("para4").innerHTML ="<strong>Brock&Stephan<br>Einbauküchen</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+document.getElementById("para1").innerHTML ="<strong>ÖFFUNGSZEITEN</strong><br><br>Montag bis Freitag<br>09.00 bis 18.00 Uhr <br> <br>Samstag<br>10.00 bis 14.00 Uhr <br>und nach Vereinbarung";
+document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Einbauküchen<br><br>Brock+Stephan<br>Einbauküchen im stilwerk<br><br>Küchenatelier Roseneck";
+document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>DATENSCHUTZ</strong>";
+document.getElementById("Senden").src ="https://imgur.com/xjgGWv6.png";
+
 }
 </script>
 	</body>
