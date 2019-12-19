@@ -32,11 +32,7 @@
 	margin-left:10.5%;
 }
 #segmentoig{
-	position:relative;
-	float:left;
-	margin-top:2%;
-	margin-left:10.5%;
-	width:75vw;
+	
 }
 #img4{
 	position:relative;
@@ -340,6 +336,65 @@ font-family:Calibri;
   margin-top:20%;
   margin-left:15%;
 }
+.mySlides {display: none;
+position:relative;
+	float:left;
+	margin-top:2%;
+	margin-left:10.5%;
+	width:75vw;
+}
+     .prev, .next {
+
+  position: absolute;
+  float:left;
+
+  width: 3vw;
+  height:3vw;
+
+  margin-left:40%;
+  
+  color:rgb(204, 293, 204);
+  font-weight: bold;
+  font-size:0.5vw;
+  
+
+
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+.prev{
+	position:relative;
+	float:left;
+  background-image:url(https://imgur.com/encbFvK.png);
+  background-repeat:no-repeat;
+  background-size:100%;
+  margin-left:45%;
+  margin-top:0.2%;
+  color:rgb(239, 239, 239);
+  
+}
+.next{
+	position:relative;
+	float:left;
+  background-image:url(https://imgur.com/wp8qcNy.png);
+  background-repeat:no-repeat;
+  background-size:85%;
+   
+  margin-left:2%;
+ 
+
+}
+.prev:hover{
+  color:rgb(239, 239, 239);
+  font-size:0px;
+}
+.next:hover{
+  color:rgb(239, 239, 239);
+  font-size:0px;
+}
+
 
 
 </style>
@@ -373,8 +428,15 @@ font-family:Calibri;
 	<section id="firsts">
      <div id="img1"><img src="https://imgur.com/B87VTHb.png"> </div>
      <div id="segmento"> +SEGMENTO Y </div>
-     <img id="segmentoig" src="https://imgur.com/a6Cqg4K.png">
-     <img id ="img4" src="https://imgur.com/K0gShkx.png"/>
+     <div class="mySlides">
+     <img  src="https://imgur.com/a6Cqg4K.png" style="width:100%"> </div>
+      <div class="mySlides">
+     <img  src="https://imgur.com/QbuFANR.png" style="width:100%"> </div>
+      <div style="position:relative; float:left; margin-left:0%; width:100%; ">
+        <a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
+      </div>
+     
      <div id="text1"><p> Neuinterpretation des modernen Klassikers +SEGMENTO von Poggenpohl. Grifflos, kompromisslos, konkurrenzlos. Kompakter, monochromer, jünger denn je. Nur in schwarz, weiẞ und grau. Lässt mehr Raum für Ihre persönlichen Accessoires und Farbakzente.<br>
      	Entalten Sie sich selbst. <br> <br> <br></p>
      </div>
@@ -388,13 +450,14 @@ font-family:Calibri;
      	<div id ="mid3" class="col-md-6"> </div>
      	<div id="mid4" class="col-md-6"> </div>
      </div>
-     <div id="midte1"> <p><strong>Besondere Merkmale:</strong> </p><br>
-     	<ul>
+     <div id="midte1"> <p id="besond"><strong>Besondere Merkmale:</strong> </p><br>
+     	<ul id="besond2">
      		<li>seitlich verbaute Elektrogeräte für Fronten</li>
      		<li>schmale, bis deckenhone Schränke bieten viel Stauraum</li>
             <li>Nanotech-Oberflächen verhindern Fingerabdrücke</li>
             <li>Leichtigkeit durch scheinbar schwebende Abdeckplatten</li>
-            <li>konsequent einheitlich in Farbe und Material</li>
+            <li>konsequent einheitlich in Farbe und Material</li> 
+        </ul>
      	</div>
      	<div id="row3" class="row">
      		 <div id="Fin1" class="col-md-4"></div>
@@ -403,7 +466,7 @@ font-family:Calibri;
      	</div>
      	<div id="Fin4">
      	</div>
-     	<div id="Ein1"> <p> Ein klares Bild von Persönlichkeit<br>
+     	<div id="Ein1"> <p id="pgg1"> Ein klares Bild von Persönlichkeit<br>
      		und gradliningem Charakter mit Raum<br>
      	für Eigensinn.</p>
      </div>
@@ -412,29 +475,80 @@ font-family:Calibri;
      </div>
      <img id="Ein3" src="https://imgur.com/6NZW95z.png"/>
 
-    <div id="Final1"> <p class="Fixf"><strong>Brock&Stephan<br>
+    <div id="Final1"> <p class="Fixf" id="para4"><strong>Brock&Stephan<br>
 	Einbauküchen</strong><br> <br>
 	Bundesallee 155<br>
 	10715 Berlin <br> <br>
 	+49 (0)30 / 853 80 55<br>
 	info@brock-stephan.com </p>
     </div>
-    <div id="Final2"> <p class="Fixf"><strong>ÖFFUNGSZEITEN</strong><br><br>
+    <div id="Final2"> <p class="Fixf" id="para1"><strong>ÖFFUNGSZEITEN</strong><br><br>
 		Montag bis Freitag<br>
 		09.00 bis 18.00 Uhr <br> <br>
 		Samstag<br>
 		10.00 bis 14.00 Uhr <br>
 	und nach Vereinbarung</p> </div>
-    <div id="Final3"> <p class="Fixf"><strong>STUDIOS</strong><br>
+    <div id="Final3"> <p class="Fixf" id="para2"><strong>STUDIOS</strong><br>
 	Brock & Stephan<br>
 	Einbauküchen<br><br>
 	Brock+Stephan<br>
 	Einbauküchen im stilwerk<br><br>
 	Küchenatelier Roseneck</p> </div>
-    <div id="Final4"> <p class="Fixf"><strong> IMPRESSUM<br>
+    <div id="Final4"> <p class="Fixf" id="para3"><strong> IMPRESSUM<br>
 		<br>
 	DATENSCHUTZ</strong></p> </div>
 
 	</section>
+	<script>
+   
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+}
+function myFunction() {
+document.getElementById("text1").innerHTML ="Reinterpretation of the modern classic + SEGMENTO by Poggenpohl. Handleless, uncompromising, unrivaled. More compact, monochrome, younger than ever. Only in black, white and gray. Leaves more space for your personal accessories and color accents. <br>Develop yourself. <br> <br> <br>";
+document.getElementById("besond").innerHTML="<strong> Special features: </strong>";
+document.getElementById("besond2").innerHTML ="<li> laterally installed electrical devices for fronts </li><li> narrow to ceiling-mounted cabinets offer plenty of storage space </li><li> Nanotech surfaces prevent fingerprints </li><li> Lightness through seemingly floating cover plates </li><li> consistently uniform in color and material </li>";
+document.getElementById("pgg1").innerHTML ="A clear picture of personality<br>and straightforward character with space<br>for obstinacy.";
+document.getElementById("Ein2p").innerHTML ="<strong>Make an appointment now</strong>";
+    document.getElementById("para4").innerHTML = "<strong>Brock&Stephan<br>Fitted Kitchens</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+    document.getElementById("para1").innerHTML ="<strong>OPENNING HOURS</strong><br><br> Monday to Friday<br>09.00 to 18.00 <br> <br> Saturday<br> 10.00 to 14.00  <br>and by appointment";
+    document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Fitted Kitchens<br><br>Brock+Stephan<br>Fitted kitchens in the stilwerk<br><br>Kitchen studio Roseneck";
+    document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>PRIVACY</strong>";
+   
+
+}
+function myFunctionn() {
+	document.getElementById("text1").innerHTML ="Neuinterpretation des modernen Klassikers +SEGMENTO von Poggenpohl. Grifflos, kompromisslos, konkurrenzlos. Kompakter, monochromer, jünger denn je. Nur in schwarz, weiẞ und grau. Lässt mehr Raum für Ihre persönlichen Accessoires und Farbakzente.<br>Entalten Sie sich selbst. <br> <br> <br>";
+	document.getElementById("besond").innerHTML ="strong>Besondere Merkmale:</strong>";
+	document.getElementById("besond2").innerHTML ="     		<li>seitlich verbaute Elektrogeräte für Fronten</li><li>schmale, bis deckenhone Schränke bieten viel Stauraum</li><li>Nanotech-Oberflächen verhindern Fingerabdrücke</li><li>Leichtigkeit durch scheinbar schwebende Abdeckplatten</li><li>konsequent einheitlich in Farbe und Material</li> ";
+	document.getElementById("pgg1").innerHTML ="Ein klares Bild von Persönlichkeit<br>und gradliningem Charakter mit Raum<br>für Eigensinn.";
+	document.getElementById("Ein2p").innerHTML ="<strong>Jetzt Termin vereinbaren</strong>";
+	document.getElementById("para4").innerHTML ="<strong>Brock&Stephan<br>Einbauküchen</strong><br> <br> Bundesallee 155<br>10715 Berlin <br> <br>+49 (0)30 / 853 80 55<br>info@brock-stephan.com";
+document.getElementById("para1").innerHTML ="<strong>ÖFFUNGSZEITEN</strong><br><br>Montag bis Freitag<br>09.00 bis 18.00 Uhr <br> <br>Samstag<br>10.00 bis 14.00 Uhr <br>und nach Vereinbarung";
+document.getElementById("para2").innerHTML ="<strong>STUDIOS</strong><br>Brock & Stephan<br>Einbauküchen<br><br>Brock+Stephan<br>Einbauküchen im stilwerk<br><br>Küchenatelier Roseneck";
+document.getElementById("para3").innerHTML ="<strong> IMPRESSUM<br><br>DATENSCHUTZ</strong>";
+
+}
+ 
+	</script>
 </body>
 </html>
